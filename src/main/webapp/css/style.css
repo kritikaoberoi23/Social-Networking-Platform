@@ -1,0 +1,265 @@
+/* ==== GLOBAL ==== */
+body {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/* ==== LAYOUT GRID ==== */
+.layout {
+    display: grid;
+    grid-template-columns: 250px 550px 300px;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Animation */
+.fade {
+    animation: fadein 0.6s ease;
+}
+
+@keyframes fadein {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ==== SIDEBAR LEFT ==== */
+.sidebar {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    height: fit-content;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+}
+
+.sidebar h3 {
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.sidebar a {
+    display: block;
+    margin: 10px 0;
+    font-weight: 500;
+    text-decoration: none;
+    color: #444;
+}
+
+.sidebar a:hover {
+    color: #6e8efb;
+}
+
+/* ==== MAIN FEED AREA ==== */
+.feed {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+}
+
+.page-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #eee;
+}
+
+.section {
+    margin-bottom: 35px;
+}
+
+.section h2 {
+    margin: 0 0 15px;
+    font-size: 22px;
+}
+
+/* ==== RIGHT SIDEBAR ==== */
+.rightbar {
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    height: fit-content;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.1);
+}
+
+.rightbar h3 {
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+/* ==== INPUTS ==== */
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+/* ==== BUTTON ==== */
+button, .btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg,#6e8efb,#a777e3);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(110,142,251,0.4);
+}
+
+/* ==== POST CARD ==== */
+.post-card {
+    padding: 18px;
+    border-radius: 12px;
+    background: #fafafa;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 15px;
+}
+
+.post-card p {
+    margin-top: 8px;
+    color: #333;
+}
+
+/* === AUTH PAGE CENTER CARD === */
+.auth-page {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.auth-card {
+    width: 380px;
+    background: white;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    animation: fadein 0.7s ease;
+}
+
+.auth-title {
+    font-size: 26px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.auth-input {
+    width: 100%;
+    padding: 12px;
+    background: #fafafa;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+.auth-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg,#6e8efb,#a777e3);
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+.auth-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(110,142,251,0.5);
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 14px;
+}
+
+.auth-link a {
+    color: #6e8efb;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* === UNIVERSAL CARD FOR INNER PAGES === */
+.page-center {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.page-card {
+    width: 480px;
+    background: white;
+    padding: 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.10);
+    animation: fadein 0.8s ease;
+}
+
+.page-title {
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* simple list style */
+.list-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+/* chat bubbles */
+.chat-area {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.chat-bubble {
+    max-width: 80%;
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.chat-me {
+    margin-left: auto;
+    background: #d6e5ff;
+}
+
+.chat-them {
+    margin-right: auto;
+    background: #eee;
+}
+
+/* post cards */
+.mini-post {
+    background:#fafafa;
+    padding:15px;
+    border-radius:12px;
+    border:1px solid #ddd;
+    margin-bottom:15px;
+}
